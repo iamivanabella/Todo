@@ -1,0 +1,165 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 300px;
+    height: 100%;
+    padding: 1.5rem;
+    border-right: 3px solid #f5f7f8;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-link {
+    color: #333; /* Link color */
+}
+
+.nav-link.active {
+    font-weight: bold; /* Active link font weight */
+}
+
+.brand-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem; 
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.project > .nav-link {
+    font-weight: bold;
+}
+
+.project > .nav-link:hover {
+    color: unset;
+}
+
+.nav-item {
+    margin-bottom: 1rem;
+}
+
+/* Circle icons */
+.circle {
+    display: inline-block;
+    width: 10px; /* Circle size */
+    height: 10px; /* Circle size */
+    border-radius: 50%;
+    margin-right: 10px; /* Spacing between circle and icon */
+}
+
+/* Circle colors for different projects */
+.circle-red { background-color: #f55539; } /* Red circle */
+.circle-blue { background-color: #4da4ec; } /* Blue circle */
+.circle-green { background-color: #32CD32; } /* Green circle */
+/* Add more colors as needed */
+
+/* PROJECT */
+[class*="content"] {
+    margin: 2rem auto;
+    margin-left: 300px; /* Set margin equal to the sidebar width */
+}
+.header {
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-title {
+    display: flex;
+    align-items: center;
+}
+.content-header .header-title h2 {
+    margin: 0 !important; /* Remove default margin */
+    font-weight: bold;
+}
+.content-header .header-title i {
+    margin-right: 0.5rem;
+    color: #6457f9;
+}
+
+.header i{
+    font-size: 3rem;
+}
+
+.header .nav-header i{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.gap {
+    height: 5rem;
+}
+.tasks {
+    display: flex;
+
+}
+.section-title h5 {
+    font-weight: bold;
+}
+
+.section {
+    margin-right: 1rem;
+    width: 300px;
+}
+
+.section-title {
+    padding: 1rem 0;
+}
+
+.task {
+    border: 3px solid #f5f7f8;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.task p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.add-task {
+    border: 3px dashed #e8ecee;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.add-task:hover {
+    cursor: pointer;
+}
+
+.add-task i {
+    margin-right: 0.5rem;
+}
+
+.delete-task {
+    display: none;
+}
+
+.task {
+    position: relative;
+}
+
+.delete-task {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Adjust as needed */
+}
+
+.task:hover .delete-task {
+    display: block;
+}
+
+.delete-task:hover {
+    cursor: pointer;
+}
